@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+}
+
+/*Background Style*/
+body{
+    justify-content: center;
+    display: flex;
+    background-color: #580114;
+}
+
+/*Form Style*/
+.container_for_loginForm{
+    position: relative;
+    width: 400px;
+    height: 470px;
+    background: #31020c;
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 70px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.5);
+}
+.container_for_loginForm::before{
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
+    animation: rotate_border 6s linear infinite;
+}
+.container_for_loginForm::after{      
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #1448d6);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes rotate_border{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.login_form{
+    position: absolute;
+    background-color: #410411;
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: #db5174;
+} 
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+.input_for_form{
+    margin-top: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+.username, .password{
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fa87ad;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #f19abe;
+}
+::placeholder{
+    font-size: 15px;
+    color: #f19abe81;
+    letter-spacing: 1px;
+}
+
+#button_for_submission{
+    position: relative;
+    margin-top: 60px;
+}
+.button_for_submission{
+    padding-left: 100px;
+ }
+.submit{
+    width: 60%;
+    height: 40px;
+    background: #ffbfda9c;
+    font-size: 20px;
+    color: #2e0114;
+    font-style: oblique;
+    cursor: pointer;
+    text-align: center;
+    border: 3px solid #220111;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.5);
+    border-radius: 10px 10px;
+}
+.singupDiv{
+    padding-left: 90px;
+}
+.singup{
+    text-decoration: none;
+    font-size: 20px;
+    color: #f3bdd4;
+    font-style: oblique;
+}
